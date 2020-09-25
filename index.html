@@ -5,72 +5,74 @@
     <meta charset="UTF-8">
     <meta name="description" content="Presentation site">
     <meta name="keywords" content="developer, CV, resume">
-    <meta name="author" content="Gabriel CHelariu">
+    <meta name="author" content="Gabriel Chelariu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello, stranger!</title>
-    <!-- Icons -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- Font awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <!-- Scroll reveal JS library-->
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.1/scrollreveal.min.js"></script>
+    
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <nav>
-                <div class="menu-icons">
-                    <i class="icon ion-md-menu"></i>
-                    <i class="icon ion-md-close"></i>
+            <nav class="nav">
+                <div class="menu-toogle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
                 </div>
+
                 <a href="index.html" class="logo">
-                    <i class="icon ion-md-home"></i>
+                    <!-- <img src="css/images/bg.jpg" alt=""> -->
                 </a>
 
                 <ul class="nav-list">
-                     <li>
-                         <a href="#">Education?</a>
-                     </li>
-                     <li>
-                        <a href="#">GitHub
-                            <i class="icon ion-md-arrow-dropdown"></i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#">Proiect1</a>
-                            </li>
-                            <li>
-                                <a href="#">Proiect2</a>
-                            </li>
-                            <li>
-                                <a href="#">Proiect3</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About me</a>
                     </li>
-                    <li>
-                        <a href="#">Experience</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Experience</a>
                     </li>
-                    <li class="move-right btn">
-                        <a href="#">Download Resume</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Download Resume</a>
                     </li>
                 </ul>
+
             </nav>
         </div>
 
     </header>
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam vel non minus quas. Dolores deleniti
-    blanditiis impedit alias minus laborum tempora, laboriosam neque illum quod, qui ea sint debitis.
-
-    <section class="hero">
-        <div class="text">
-            <h2>Hello</h2>
-            <h1>Portfolio</h1>
-            <p>My name is Gabriel and I designed this website to better showcase my Resume!</p>
-            <a href="#" class="btn">Learn more</a>
+    <!-- Header Ends -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">H</span>ello
+            </h2>
+            <h1 class="headline">Stranger</h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5>Learn about me!</h5>
+                    <a href="#" class="btn cta-btn">Download Resume</a>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Hero Ends -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
