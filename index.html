@@ -11,8 +11,8 @@
     <!-- Font awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
     <!-- Scroll reveal JS library-->
-    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.1/scrollreveal.min.js"></script>
-    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -24,32 +24,22 @@
                     <i class="fas fa-bars"></i>
                     <i class="fas fa-times"></i>
                 </div>
-
-                <a href="index.html" class="logo">
-                    <!-- <img src="css/images/bg.jpg" alt=""> -->
-                </a>
-
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About me</a>
+                        <a href="#story" class="nav-link active">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Experience</a>
+                        <a href="#experience"  class="nav-link">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Download Resume</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
-
             </nav>
         </div>
-
     </header>
     <!-- Header Ends -->
     <section class="hero" id="hero">
@@ -57,7 +47,7 @@
             <h2 class="sub-headline">
                 <span class="first-letter">H</span>ello
             </h2>
-            <h1 class="headline">Stranger</h1>
+            <h1 class="hero-headline">Stranger</h1>
             <div class="headline-description">
                 <div class="separator">
                     <div class="line line-left"></div>
@@ -66,13 +56,148 @@
                 </div>
                 <div class="single-animation">
                     <h5>Learn about me!</h5>
-                    <a href="#" class="btn cta-btn">Download Resume</a>
+                    <a href="#" class="btn cta-btn" download="CV-GABRIEL-CHELARIU.pdf">Download Resume</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Hero Ends -->
+
+    <section class="discover-my-story" id="story">
+        <div class="container">
+            <div class="my-info">
+                <div class="my-description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">D</span>iscover
+                        </h2>
+                        <h1 class="headline headline-dark">My Story</h1>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, obcaecati minus! Magnam quam
+                        provident laborum sequi et tempora praesentium, adipisci, nulla suscipit aut debitis aperiam
+                        necessitatibus neque, perspiciatis excepturi est.
+                    </p>
+                    <!-- <a href="#" class="btn body-btn">About Me</a> -->
+                </div>
+                <div class="my-info-img animate-right">
+                    <img src="css/images/discover.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- discover my story ends-->
+    <section class="portfolio between" id="portfolio">
+        <div class="container">
+            <div class="global-headline">
+                <div class="animate-top">
+                    <h2 class="sub-headline">
+                        <span class="first-letter">M</span>y
+                    </h2> 
+                </div>
+                <div class="animate-bottom">
+                    <h1 class="headline headline-dark">portfolio</h1>
+                    <div class="portfolio-btn">
+                        <a href="https://github.com/gchelariu/ConcentrationGame" class="btn cta-btn">Concentration Game</a>
+                        <a href="https://github.com/gchelariu/HotelReservationApp" class="btn cta-btn">Hotel Rezervation App</a>
+                        <a href="https://github.com/gchelariu/TicTacToe" class="btn cta-btn">TickTacToe</a>
+                        <a href="https://github.com/gchelariu/MedicalClinic-MongoDB" class="btn cta-btn">Medical Clinic</a>
+                        <a href="https://github.com/gchelariu/LoginApp" class="btn cta-btn">Login App</a>
+                        <a href="https://github.com/gchelariu/WebAppTest" class="btn cta-btn">Web App</a>
+                    </div>
+                    <div class="social-media">
+                        <h3>See full list of projects</h3>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://github.com/gchelariu?tab=repositories"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio ends -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="my-info">
+                <div class="my-description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">M</span>y
+                        </h2>
+                        <h1 class="headline headline-dark">experience</h1>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nobis quos nam sunt pariatur quibusdam delectus recusandae voluptas saepe! Eveniet minus, vel at distinctio possimus porro saepe natus voluptatibus exercitationem?
+                    </p>
+                </div>
+                <div class="image-group padding-right animate-left">
+                    <img src="css/images/expleo.png" alt="">
+                    <img src="css/images/kaspch.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- experience ends -->
+    <section class="contact between" id="contact">
+        <div class="container">
+            <div class="global-headline">
+                <div class="animate-top">
+                    <h2 class="sub-headline">
+                        <span class="first-letter">M</span>y
+                    </h2> 
+                </div>
+                <div class="animate-bottom">
+                    <h1 class="headline headline-dark">Contact info</h1>
+                    <div class="social-media">
+                        <h4>Click to copy!</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#contact" onclick="copyMail()"><i class="fas fa-envelope-open"></i></a>
+                            </li>
+                            <li>
+                                <a href="#contact" onclick="copyPhone()"><i class="fas fa-mobile-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact info ends -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animate-top">
+                    <!-- <h4>About</h4> -->
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima et quidem placeat aperiam nam optio, harum quae accusantium qui fugit doloremque quibusdam quo libero commodi voluptates! Blanditiis, illo eum. Illo.
+                    </p>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://github.com/gchelariu"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/gabriel-chelariu-473874166/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
